@@ -1,0 +1,84 @@
+body {
+  background-color: #f69400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+h1 {
+  margin: 1em 0 2em 0;
+}
+
+.sidebar {
+  margin-left: 1em;
+  padding: 1em;
+  border-radius: 3px;
+  display: flex;
+}
+
+.group *,
+button {
+  margin: 0.5em 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 0.5em;
+}
+
+button:hover {
+  background-color: rgb(211, 61, 61);
+}
+
+main {
+  display: flex;
+}
+
+canvas {
+  background-color: #fff;
+  width: 450px;
+  height: 450px;
+}
+
+.logo {
+  width: 400px;
+}
+
+.gallery {
+  display: none;
+}
+
+.panel-controller {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 200px;
+}
+
+.btn {
+  width: 50px;
+}
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type='text'] {
+  font-size: 36px;
+}
+
+input[type='color'] {
+  width: 100px;
+  height: 100px;
+}
+
+.changeClose {
+  display: none;
+}

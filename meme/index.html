@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Meme Gen</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <img class="logo" src="gallery/LOGO.png" alt="">
+    </header>
+
+    <main>
+
+        <section id="gallery" class="gallery">
+
+        </section>
+
+        <div class="panel-controller">
+            <canvas id="canvas" height="450" width="450">
+            </canvas>
+
+            <div class="orders">
+                <input type="text" placeholder="Type something" id="text">
+                <button onclick="addText()" id="addText"><img class="btn" src="gallery/ICONS/add.png" alt=""></button>
+                <input width="200" oninput="onSetColor(this.value)" type="color" id="color">
+            </div>
+            <div class="sidebar">
+                <button onclick="onIncrease(1)" class="increase"><img class="btn"
+                        src="gallery/ICONS/increase font - icon.png"></button>
+                <button onclick="onDecrease(-1)" class="decrease"><img class="btn"
+                        src="gallery/ICONS/decrease font - icon.png" alt=""></button>
+                <button class="changeOpen" onclick="showGallery()">Open gallery</button>
+                <button class="changeClose" onclick="hideGallery()">Close gallery</button>
+
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+        <script src="./galleryController.js"></script>
+        <script src="./memeService.js"></script>
+        <script src="./memeController.js"></script>
+
+</body>
+
+</html>
